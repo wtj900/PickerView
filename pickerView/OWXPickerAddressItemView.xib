@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OWXPickerAddressItemView">
+            <rect key="frame" x="0.0" y="0.0" width="244" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="244" height="122"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rV-b7-hGm">
+                        <rect key="frame" x="101" y="50.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhI-qo-1NG">
+                        <rect key="frame" x="10" y="119" width="224" height="2"/>
+                        <color key="backgroundColor" red="1" green="0.12650062079999999" blue="0.12929827150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="ECX-wR-kRa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="HhI-qo-1NG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="3e4-oi-bOi"/>
+                <constraint firstAttribute="bottom" secondItem="HhI-qo-1NG" secondAttribute="bottom" constant="1" id="EWi-a5-S4u"/>
+                <constraint firstItem="7rV-b7-hGm" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="LQG-Pq-QoY"/>
+                <constraint firstAttribute="trailing" secondItem="HhI-qo-1NG" secondAttribute="trailing" constant="10" id="Ruy-8e-8GX"/>
+                <constraint firstItem="7rV-b7-hGm" firstAttribute="centerY" secondItem="SEy-5g-ep8" secondAttribute="centerY" id="prm-9R-kCa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="244" height="122"/>
+            <connections>
+                <outlet property="bottomLine" destination="HhI-qo-1NG" id="T8O-lP-ibF"/>
+                <outlet property="titleLabel" destination="7rV-b7-hGm" id="ekA-Cn-pIZ"/>
+            </connections>
+            <point key="canvasLocation" x="-56" y="101.64917541229386"/>
+        </collectionViewCell>
+    </objects>
+</document>
